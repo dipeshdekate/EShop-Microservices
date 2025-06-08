@@ -1,0 +1,6 @@
+services:
+  catalogue.api:
+    image: ${DOCKER_REGISTRY-}catalogueapi
+    build:
+      context: .
+      dockerfile: Services/Catalogue/Catalogue.API/Dockerfile
